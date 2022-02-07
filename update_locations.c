@@ -8,19 +8,19 @@
 // The script takes as input the size of the number of objects and the number of turns
 
 
-int8_t* generate_random_list( int size, int bound){
-    int8_t rand_list[size];
+double* generate_random_list( int size, int bound){
+    double rand_list[size];
     for(int i = 0 ; i< size; i++){
-        rand_list[i] = (int8_t) ((rand()%(2*bound)) - bound);
+        rand_list[i] = (double) ((rand()%(2*bound)) - bound);
         // printf("here: %f", rand_list[i]);
     }
-    int8_t* p;
+    double* p;
     p = rand_list;
     return p;
 
 }
 
-int sum(int8_t* xs, int8_t* ys, int8_t* zs, int size){
+int sum(double* xs, double* ys, double* zs, int size){
     int res =0;
     for(int i = 0; i< size; i++){
         res+=(xs[i]+ ys[i]+ zs[i]);
@@ -32,7 +32,7 @@ int sum(int8_t* xs, int8_t* ys, int8_t* zs, int size){
 
 
 
-void updatecoords(int8_t *xs, int8_t *ys, int8_t *zs, int8_t *vx, int8_t *vy, int8_t *vz){
+void updatecoords(double *xs, double *ys, double *zs, double *vx, double *vy, double *vz){
     for(int i =0; i < (int) sizeof xs; i++){
         xs[i] = xs[i] + vx[i];
         ys[i] = ys[i] + vy[i];
@@ -53,12 +53,12 @@ int main(int argc, char *argv[]){
     int numIterations = atoi(argv[2]);
     printf("Size: %i\n", numObjs);
     printf("Moves: %i\n" , numIterations);
-    int8_t* xs = generate_random_list(numObjs, 1000);
-    int8_t* ys = generate_random_list(numObjs, 1000);
-    int8_t* zs = generate_random_list(numObjs, 1000);
-    int8_t* vx = generate_random_list(numObjs, 1);
-    int8_t* vy = generate_random_list(numObjs, 1);
-    int8_t* vz = generate_random_list(numObjs, 1);
+    double* xs = generate_random_list(numObjs, 1000);
+    double* ys = generate_random_list(numObjs, 1000);
+    double* zs = generate_random_list(numObjs, 1000);
+    double* vx = generate_random_list(numObjs, 1);
+    double* vy = generate_random_list(numObjs, 1);
+    double* vz = generate_random_list(numObjs, 1);
     struct timespec start, end;
     clock_gettime (CLOCK_MONOTONIC, &start);
     for(int i =0; i< numIterations; i++){
