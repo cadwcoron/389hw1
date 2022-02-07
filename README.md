@@ -29,13 +29,13 @@ I interpreted 'as close to python as possible' meant to use doubles for everythi
     sh testc.sh
 
 Which will output the data into `cdata.txt`. Here is an example run
-'''
+```
     #objs   time(us)
     28	    0.0025435	 
     56	    0.001918	 
     112	    0.0014841	 
     224	    0.00118837	 
-'''
+```
 
 And here is the two sets of data plotted together.
 
@@ -46,36 +46,48 @@ And here is the two sets of data plotted together.
 Here are the outputs for the different types using the shell script discussed in part B. Times for a type of double can be found above.
 
 Float
+```
     #objs   time(us)
     28	    0.00237	 
     56	    0.0011784	 
     112	    0.0005936	 
-    224	    0.0002942	 
+    224	    0.0002942	
+ ```
 
 int8_t
+```
     28	0.0016189	 
     56	0.000784	 
     112	0.0003826	 
     224	0.0002045	
+ ```
 
 int16_t
+```
     #objs   time(us)
     28	0.002205	 
     56	0.0009167	 
     112	0.0004074	 
     224	0.0002637	 
+ ```
 
 int32_t
+
+```
     #objs   time(us)
     28	    0.0015994	 
     56	    0.0009605	 
     112 	0.0004517	 
     224	    0.0002336	 
+ ```
 
 
 int64_t
+```
     #objs   time(us)
     28	    0.0015402	 
     56	    0.0007412	 
     112	    0.0004559	 
     224	    0.0002874	
+    
+  ```
