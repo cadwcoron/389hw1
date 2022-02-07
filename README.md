@@ -20,7 +20,7 @@ Which will output the data into `data.txt`. I then plotted that data, as shown b
     56      0.2482	 
     112 	0.233636	 
     224	    0.231991	 
-![This is an image](images/Screen Shot 2022-02-06 at 4.30.19 PM.png)
+![This is an image](imageA.png)
 
 # B
 
