@@ -15,11 +15,14 @@ I decided to run the tests with as many iterations as possible, so that any outl
     sh test.sh
 
 Which will output the data into `data.txt`. I then plotted that data, as shown below, using gnuplot
+
+```
     #objs   time(us)
     28      0.247929	 
     56      0.2482	 
     112 	0.233636	 
     224	    0.231991	 
+ ```
 ![This is an image](imageA.png)
 
 # B
