@@ -29,11 +29,13 @@ I interpreted 'as close to python as possible' meant to use doubles for everythi
     sh testc.sh
 
 Which will output the data into `cdata.txt`. Here is an example run
+'''
     #objs   time(us)
     28	    0.0025435	 
     56	    0.001918	 
     112	    0.0014841	 
     224	    0.00118837	 
+'''
 
 And here is the two sets of data plotted together.
 
