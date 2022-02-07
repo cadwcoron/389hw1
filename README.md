@@ -37,6 +37,8 @@ Which will output the data into `cdata.txt`. Here is an example run
 
 And here is the two sets of data plotted together.
 
+![This is an image](imageB.png)
+
 # C
 
 Here are the outputs for the different types using the shell script discussed in part B. Times for a type of double can be found above.
